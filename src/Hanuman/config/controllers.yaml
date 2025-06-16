@@ -2,7 +2,6 @@ controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
-
     velocity_controller:
       type: velocity_controllers/JointGroupVelocityController
 
@@ -40,6 +39,11 @@ velocity_controller:
     # Head
       # - J_neck
       # - J_cam
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - velocity 
+      - position
 
 joint_trajectory_controller:
   ros__parameters:

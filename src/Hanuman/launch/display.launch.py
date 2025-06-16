@@ -28,7 +28,7 @@ def generate_launch_description():
         package_name), "config", "humanoid" + ".rviz")
     
     robot_description = os.path.join(get_package_share_directory(
-        package_name), "robot", "hanuman" + ".urdf.xacro")
+        package_name), "urdf", "hanuman" + ".urdf.xacro")
     robot_description_config = xacro.process_file(robot_description)
 
     return LaunchDescription([

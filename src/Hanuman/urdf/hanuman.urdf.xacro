@@ -4,7 +4,8 @@
   <xacro:property name="description_package" value="hanuman04"/>
   <xacro:include filename="$(find ${description_package})/urdf/properties.xacro"/>
   <xacro:include filename="$(find ${description_package})/urdf/hanuman.xacro" />
-  <xacro:include filename="$(find ${description_package})/urdf/hanuman.ros2_control.xacro" />
+  <!-- <xacro:include filename="$(find ${description_package})/urdf/hanuman.ros2_control.xacro" /> -->
+  <xacro:include filename="$(find ${description_package})/urdf/hanuman.ros2_gazebo.xacro"/>
   
   <link name="world"/>
   <xacro:humanoid parent="world"/>
